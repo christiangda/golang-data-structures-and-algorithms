@@ -1,6 +1,6 @@
 # Golang Data Structures and Algorithms
 
-Studiying Data Structures and Algorithms using golang tests
+Studying Data Structures and Algorithms using golang tests
 
 ## test
 
