@@ -1,5 +1,9 @@
 package interview
 
+import (
+	"math"
+)
+
 // BubbleSort ...
 func BubbleSort(data []int) {
 
@@ -38,5 +42,23 @@ func bubbleSortRecursive(data []int, i, max int) {
 			data[i], data[i+1] = data[i+1], data[i]
 		}
 		bubbleSortRecursive(data, i+1, max)
+	}
+}
+
+// SelectionSort ...
+func SelectionSort(data []int) {
+
+	minIdx := 0
+	minVal := math.MaxInt32
+
+	for i := 0; i < len(data); i++ {
+		for j := i; j < len(data); j++ {
+			if data[j] < minVal {
+				minIdx = j
+				minVal = data[j]
+			}
+		}
+		data[i], data[minIdx] = data[minIdx], data[i]
+		minVal = math.MaxInt32
 	}
 }
