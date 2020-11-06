@@ -1,5 +1,7 @@
 package interview
 
+import "sort"
+
 // LinearSearch ...
 func LinearSearch(data []int, target int) bool {
 
@@ -40,6 +42,7 @@ func BinarySearch(data []int, target int) bool {
 
 	low := 0
 	high := len(data)
+	sort.Ints(data) // neccessary
 
 	if target > high || target < low {
 		return false
@@ -66,6 +69,7 @@ func BinarySearchRecursive(data []int, target int) bool {
 
 	low := 0
 	high := len(data)
+	sort.Ints(data) // neccessary
 
 	return binarySearchRecursive(data, target, low, high)
 
