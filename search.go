@@ -55,9 +55,9 @@ func BinarySearch(data []int, target int) bool {
 		if data[mid] == target {
 			return true
 		} else if data[mid] < target {
-			low = mid
+			low = mid + 1
 		} else {
-			high = mid
+			high = mid - 1
 		}
 	}
 

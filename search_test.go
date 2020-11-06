@@ -58,7 +58,8 @@ func TestLinearSearch(t *testing.T) {
 }
 func TestBinarySearch(t *testing.T) {
 
-	data := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+	// it is sorted inside the algorithm
+	data := []int{11, 12, 13, 14, 15, 16, 17, 18, 19, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 
 	t.Run("iterative solution", func(t *testing.T) {
 		tests := []struct {
